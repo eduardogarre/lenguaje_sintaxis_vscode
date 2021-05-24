@@ -1,0 +1,25 @@
+{
+    "name": "lenguaje-n",
+    "displayName": "Lenguaje Ñ",
+    "description": "Soporte para el lenguaje Ñ",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ñ",
+            "aliases": ["Lenguaje Ñ", "ñ", "Ñ"],
+            "extensions": [".ñ",".Ñ"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ñ",
+            "scopeName": "source.ñ",
+            "path": "./syntaxes/ñ.plist"
+        }]
+    }
+}
