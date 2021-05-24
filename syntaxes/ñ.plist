@@ -34,7 +34,37 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>([a-zA-Z\x{00e1}\x{00e9}\x{00ed}\x{00f3}\x{00fa}\x{00c1}\x{00c9}\x{00cd}\x{00d3}\x{00da}\x{00e0}\x{00e8}\x{00ec}\x{00f2}\x{00f9}\x{00c0}\x{00c8}\x{00cc}\x{00d2}\x{00d9}\x{00e4}\x{00eb}\x{00ef}\x{00f6}\x{00fc}\x{00c4}\x{00cb}\x{00cf}\x{00d6}\x{00dc}\x{00e2}\x{00ea}\x{00ee}\x{00f4}\x{00fb}\x{00c2}\x{00ca}\x{00ce}\x{00d4}\x{00db}\x{00e3}\x{00f5}\x{00f1}\x{00c3}\x{00d5}\x{00d1}\x{00e7}\x{00c7}][_0-9a-zA-Z\x{00e1}\x{00e9}\x{00ed}\x{00f3}\x{00fa}\x{00c1}\x{00c9}\x{00cd}\x{00d3}\x{00da}\x{00e0}\x{00e8}\x{00ec}\x{00f2}\x{00f9}\x{00c0}\x{00c8}\x{00cc}\x{00d2}\x{00d9}\x{00e4}\x{00eb}\x{00ef}\x{00f6}\x{00fc}\x{00c4}\x{00cb}\x{00cf}\x{00d6}\x{00dc}\x{00e2}\x{00ea}\x{00ee}\x{00f4}\x{00fb}\x{00c2}\x{00ca}\x{00ce}\x{00d4}\x{00db}\x{00e3}\x{00f5}\x{00f1}\x{00c3}\x{00d5}\x{00d1}\x{00e7}\x{00c7}]*)</string>
+          <string>([-0-9][0-9]*[.]*[0-9]*[eE][-0-9][0-9]*)</string>
+          <key>name</key>
+          <string>constant.numeric.ñ</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>([-0-9][0-9]*[.]*[0-9]*)</string>
+          <key>name</key>
+          <string>constant.numeric.ñ</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>([-0-9][0-9]*)</string>
+          <key>name</key>
+          <string>constant.numeric.ñ</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>(cierto)|(falso)|(nulo)</string>
+          <key>name</key>
+          <string>constant.language.ñ</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>([_a-zA-Z\x{00e1}\x{00e9}\x{00ed}\x{00f3}\x{00fa}\x{00c1}\x{00c9}\x{00cd}\x{00d3}\x{00da}\x{00e0}\x{00e8}\x{00ec}\x{00f2}\x{00f9}\x{00c0}\x{00c8}\x{00cc}\x{00d2}\x{00d9}\x{00e4}\x{00eb}\x{00ef}\x{00f6}\x{00fc}\x{00c4}\x{00cb}\x{00cf}\x{00d6}\x{00dc}\x{00e2}\x{00ea}\x{00ee}\x{00f4}\x{00fb}\x{00c2}\x{00ca}\x{00ce}\x{00d4}\x{00db}\x{00e3}\x{00f5}\x{00f1}\x{00c3}\x{00d5}\x{00d1}\x{00e7}\x{00c7}][_0-9a-zA-Z\x{00e1}\x{00e9}\x{00ed}\x{00f3}\x{00fa}\x{00c1}\x{00c9}\x{00cd}\x{00d3}\x{00da}\x{00e0}\x{00e8}\x{00ec}\x{00f2}\x{00f9}\x{00c0}\x{00c8}\x{00cc}\x{00d2}\x{00d9}\x{00e4}\x{00eb}\x{00ef}\x{00f6}\x{00fc}\x{00c4}\x{00cb}\x{00cf}\x{00d6}\x{00dc}\x{00e2}\x{00ea}\x{00ee}\x{00f4}\x{00fb}\x{00c2}\x{00ca}\x{00ce}\x{00d4}\x{00db}\x{00e3}\x{00f5}\x{00f1}\x{00c3}\x{00d5}\x{00d1}\x{00e7}\x{00c7}]*\()</string>
+          <key>name</key>
+          <string>entity.name.function.ñ</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>([_a-zA-Z\x{00e1}\x{00e9}\x{00ed}\x{00f3}\x{00fa}\x{00c1}\x{00c9}\x{00cd}\x{00d3}\x{00da}\x{00e0}\x{00e8}\x{00ec}\x{00f2}\x{00f9}\x{00c0}\x{00c8}\x{00cc}\x{00d2}\x{00d9}\x{00e4}\x{00eb}\x{00ef}\x{00f6}\x{00fc}\x{00c4}\x{00cb}\x{00cf}\x{00d6}\x{00dc}\x{00e2}\x{00ea}\x{00ee}\x{00f4}\x{00fb}\x{00c2}\x{00ca}\x{00ce}\x{00d4}\x{00db}\x{00e3}\x{00f5}\x{00f1}\x{00c3}\x{00d5}\x{00d1}\x{00e7}\x{00c7}][_0-9a-zA-Z\x{00e1}\x{00e9}\x{00ed}\x{00f3}\x{00fa}\x{00c1}\x{00c9}\x{00cd}\x{00d3}\x{00da}\x{00e0}\x{00e8}\x{00ec}\x{00f2}\x{00f9}\x{00c0}\x{00c8}\x{00cc}\x{00d2}\x{00d9}\x{00e4}\x{00eb}\x{00ef}\x{00f6}\x{00fc}\x{00c4}\x{00cb}\x{00cf}\x{00d6}\x{00dc}\x{00e2}\x{00ea}\x{00ee}\x{00f4}\x{00fb}\x{00c2}\x{00ca}\x{00ce}\x{00d4}\x{00db}\x{00e3}\x{00f5}\x{00f1}\x{00c3}\x{00d5}\x{00d1}\x{00e7}\x{00c7}]*)</string>
           <key>name</key>
           <string>variable.ñ</string>
         </dict>
@@ -62,9 +92,39 @@
             </dict>
           </dict>
         </dict>
+        <dict>
+          <key>begin</key>
+          <string>(\&apos;)</string>
+          <key>beginCaptures</key>
+          <dict>
+            <key>1</key>
+            <dict>
+              <key>name</key>
+              <string>constant.character.ñ</string>
+            </dict>
+          </dict>
+          <key>contentName</key>
+          <string>constant.character.ñ</string>
+          <key>end</key>
+          <string>(\&apos;)</string>
+          <key>endCaptures</key>
+          <dict>
+            <key>1</key>
+            <dict>
+              <key>name</key>
+              <string>constant.character.ñ</string>
+            </dict>
+          </dict>
+        </dict>
        </array>
     </dict>
     <key>main__1</key>
+    <dict>
+      <key>patterns</key>
+      <array> 
+       </array>
+    </dict>
+    <key>main__2</key>
     <dict>
       <key>patterns</key>
       <array> 
