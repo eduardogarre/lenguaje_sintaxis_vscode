@@ -1,6 +1,6 @@
 {
     "name": "lenguaje-n",
-    "displayName": "Lenguaje Ñ",
+    "displayName": "Ñ",
     "description": "Soporte para el lenguaje Ñ",
     "version": "0.0.1",
     "engines": {
@@ -12,7 +12,7 @@
     "contributes": {
         "languages": [{
             "id": "ñ",
-            "aliases": ["Lenguaje Ñ", "ñ", "Ñ"],
+            "aliases": ["Ñ", "ñ", "Lenguaje Ñ"],
             "extensions": [".ñ",".Ñ"],
             "configuration": "./language-configuration.json"
         }],

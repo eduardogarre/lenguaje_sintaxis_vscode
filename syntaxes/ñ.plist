@@ -28,9 +28,9 @@
       <array> 
         <dict>
           <key>match</key>
-          <string>(nada)|(ent)|(nat)|(real)|(bool)|(txt)</string>
+          <string>(//.*)</string>
           <key>name</key>
-          <string>storage.type.ñ</string>
+          <string>comment.ñ</string>
         </dict>
         <dict>
           <key>match</key>
@@ -52,15 +52,21 @@
         </dict>
         <dict>
           <key>match</key>
+          <string>(nada)|(ent)|(nat)|(real)|(bool)|(txt)</string>
+          <key>name</key>
+          <string>storage.type.ñ</string>
+        </dict>
+        <dict>
+          <key>match</key>
           <string>(devuelve)|(crea)|(borra)</string>
           <key>name</key>
-          <string>keyword.operator.ñ</string>
+          <string>keyword.control.ñ</string>
         </dict>
         <dict>
           <key>match</key>
           <string>(módulo)|(clase)|(enum)|(si)|(si no, si)|(bucle)|(sea)</string>
           <key>name</key>
-          <string>keyword.ñ</string>
+          <string>keyword.control.ñ</string>
         </dict>
         <dict>
           <key>match</key>

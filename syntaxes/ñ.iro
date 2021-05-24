@@ -4,22 +4,23 @@ name                   = ñ
 file_extensions []     = ñ;
 
 styles [] {
+   .comentario             : style color = "grey"           textmate_scope = "comment";
    .tipo                   : style color = "light_blue"     textmate_scope = "storage.type";
    .función                : style color = "light_yellow"   textmate_scope = "entity.name.function";
    .variable               : style color = "light_green"    textmate_scope = "variable";
    .texto                  : style color = "brown"          textmate_scope = "string";
    .carácter               : style color = "blue"           textmate_scope = "constant.character";
    .reservada_numérica     : style color = "blue"           textmate_scope = "constant.language";
-   .reservada_operador     : style color = "blue"           textmate_scope = "keyword.operator";
-   .reservada              : style color = "blue"           textmate_scope = "keyword";
+   .reservada_operador     : style color = "blue"           textmate_scope = "keyword.control";
+   .reservada              : style color = "blue"           textmate_scope = "keyword.control";
    .número                 : style color = "red"            textmate_scope = "constant.numeric";
 }
 
 contexts [] {
    main : context {
       : pattern {
-         regex          \= (nada)|(ent)|(nat)|(real)|(bool)|(txt)
-         styles[]        = .tipo;
+         regex          \= (//.*)
+         styles[]        = .comentario;
       }
       : pattern {
          regex          \= ([-0-9][0-9]*[.]*[0-9]*[eE][-0-9][0-9]*)
@@ -32,6 +33,10 @@ contexts [] {
       : pattern {
          regex          \= ([-0-9][0-9]*)
          styles[]        = .número;
+      }
+      : pattern {
+         regex          \= (nada)|(ent)|(nat)|(real)|(bool)|(txt)
+         styles[]        = .tipo;
       }
       : pattern {
          regex          \= (devuelve)|(crea)|(borra)
