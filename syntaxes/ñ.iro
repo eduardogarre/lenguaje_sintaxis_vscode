@@ -4,8 +4,9 @@ name                   = ñ
 file_extensions []     = ñ;
 
 styles [] {
-   .tipo             : style color = "blue" textmate_scope = "storage.type";
-   .entrecomillado   : style color = "red" textmate_scope = "string";
+   .tipo             : style color = "light_blue" textmate_scope = "storage.type";
+   .identificador    : style color = "light_yellow" textmate_scope = "variable";
+   .entrecomillado   : style color = "brown" textmate_scope = "string";
 }
 
 contexts [] {
@@ -13,6 +14,10 @@ contexts [] {
       : pattern {
          regex          \= (nada)|(ent)|(nat)|(real)|(bool)|(txt)
          styles[]        = .tipo;
+      }
+      : pattern {
+         regex          \= ([a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõñÃÕÑçÇ][_0-9a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõñÃÕÑçÇ]*)
+         styles[]        = .identificador;
       }
       : inline_push {
          regex          \= (\")
