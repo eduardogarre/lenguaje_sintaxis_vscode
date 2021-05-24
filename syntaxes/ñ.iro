@@ -1,0 +1,28 @@
+# Creado usando IRO https://eeyo.io/iro/
+
+name                   = ñ
+file_extensions []     = ñ;
+
+styles [] {
+   .tipo             : style color = "blue" textmate_scope = "storage.type";
+   .entrecomillado   : style color = "red" textmate_scope = "string";
+}
+
+contexts [] {
+   main : context {
+      : pattern {
+         regex          \= (nada)|(ent)|(nat)|(real)|(bool)|(txt)
+         styles[]        = .tipo;
+      }
+      : inline_push {
+         regex          \= (\")
+         styles[]        = .entrecomillado;
+         default_style   = .entrecomillado
+
+         : pop {
+            regex       \= (\")
+            styles[]     = .entrecomillado;
+         }
+      }
+   }
+}
