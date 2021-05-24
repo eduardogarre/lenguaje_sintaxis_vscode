@@ -52,6 +52,18 @@
         </dict>
         <dict>
           <key>match</key>
+          <string>(devuelve)|(crea)|(borra)</string>
+          <key>name</key>
+          <string>keyword.operator.ñ</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>(módulo)|(clase)|(enum)|(si)|(si no, si)|(bucle)|(sea)</string>
+          <key>name</key>
+          <string>keyword.ñ</string>
+        </dict>
+        <dict>
+          <key>match</key>
           <string>(cierto)|(falso)|(nulo)</string>
           <key>name</key>
           <string>constant.language.ñ</string>
