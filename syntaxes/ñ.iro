@@ -9,6 +9,7 @@ styles [] {
    .función                : style color = "light_yellow"   textmate_scope = "entity.name.function";
    .variable               : style color = "light_green"    textmate_scope = "variable";
    .texto                  : style color = "brown"          textmate_scope = "string";
+   .texto_escape           : style color = "brown"          textmate_scope = "string.regexp";
    .carácter               : style color = "blue"           textmate_scope = "constant.character";
    .reservada_numérica     : style color = "blue"           textmate_scope = "constant.language";
    .reservada_operador     : style color = "blue"           textmate_scope = "keyword.control";
@@ -61,9 +62,16 @@ contexts [] {
       : inline_push {
          regex          \= (\")
          styles[]        = .texto;
-         default_style   = .texto
          : pop {
             regex       \= (\")
+            styles[]     = .texto;
+         }
+         : pattern {
+            regex       \= (\\.)
+            styles[]     = .texto_escape;
+         }
+         : pattern {
+            regex       \= ([.]*[^\"])
             styles[]     = .texto;
          }
       }
