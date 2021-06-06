@@ -35,11 +35,15 @@ contexts [] {
          styles[]        = .número;
       }
       : pattern {
-         regex          \= (nada)|(ent)|(nat)|(real)|(bool)|(txt)
+         regex          \= (nada|ent8|ent16|ent32|ent64|ent|nat8|nat16|nat32|nat64|nat|real32|real64|real|bool|txt)([^_0-9a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõñÃÕÑçÇ])
          styles[]        = .tipo;
       }
       : pattern {
-         regex          \= (devuelve)|(crea)|(borra)
+         regex          \= ([_a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõñÃÕÑçÇ][_0-9a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõñÃÕÑçÇ]*\()
+         styles[]        = .función;
+      }
+      : pattern {
+         regex          \= (devuelve)|(vuelve)|(crea)|(borra)
          styles[]        = .reservada_operador;
       }
       : pattern {
@@ -49,10 +53,6 @@ contexts [] {
       : pattern {
          regex          \= (cierto)|(falso)|(nulo)
          styles[]        = .reservada_numérica;
-      }
-      : pattern {
-         regex          \= ([_a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõñÃÕÑçÇ][_0-9a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõñÃÕÑçÇ]*\()
-         styles[]        = .función;
       }
       : pattern {
          regex          \= ([_a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõñÃÕÑçÇ][_0-9a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõñÃÕÑçÇ]*)
