@@ -94,7 +94,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(módulo)|(clase)|(enum)|(si)|(si no, si)|(bucle)|(sea)</string>
+          <string>(módulo)|(clase)|(enum)|(si no, si)|(si no)|(si)|(bucle)|(sea)</string>
           <key>name</key>
           <string>keyword.control.ñ</string>
         </dict>
