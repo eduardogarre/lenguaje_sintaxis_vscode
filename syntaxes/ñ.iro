@@ -57,7 +57,7 @@ contexts [] {
          styles[]        = .reservada_operador;
       }
       : pattern {
-         regex          \= (módulo)|(clase)|(enum)|(si no, si)|(si no)|(si)|(bucle)|(sea)
+         regex          \= (módulo)|(clase)|(enum)|(si no, si)|(si no)|(sino)|(si)|(bucle)|(sea)
          styles[]        = .reservada;
       }
       : pattern {
