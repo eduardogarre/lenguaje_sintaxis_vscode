@@ -88,13 +88,13 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(devuelve)|(vuelve)|(crea)|(borra)</string>
+          <string>(devuelve)|(vuelve)|(para)|(crea)|(borra)</string>
           <key>name</key>
           <string>keyword.control.ñ</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>(módulo)|(clase)|(enum)|(si no, si)|(si no)|(sino)|(si)|(bucle)|(mientras)|(cada)|(sea)|(público)|(externo)</string>
+          <string>(módulo)|(clase)|(enum)|(si no, si)|(si no)|(sino)|(si)|(bucle)|(sea)|(público)|(externo)</string>
           <key>name</key>
           <string>keyword.control.ñ</string>
         </dict>

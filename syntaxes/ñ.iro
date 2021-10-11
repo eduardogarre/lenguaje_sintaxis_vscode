@@ -53,11 +53,11 @@ contexts [] {
          styles[]        = .función;
       }
       : pattern {
-         regex          \= (devuelve)|(vuelve)|(crea)|(borra)
+         regex          \= (devuelve)|(vuelve)|(para)|(crea)|(borra)
          styles[]        = .reservada_operador;
       }
       : pattern {
-         regex          \= (módulo)|(clase)|(enum)|(si no, si)|(si no)|(sino)|(si)|(bucle)|(mientras)|(cada)|(sea)|(público)|(externo)
+         regex          \= (módulo)|(clase)|(enum)|(si no, si)|(si no)|(sino)|(si)|(bucle)|(sea)|(público)|(externo)
          styles[]        = .reservada;
       }
       : pattern {
