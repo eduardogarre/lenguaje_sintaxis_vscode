@@ -1,7 +1,8 @@
 {
-    "name": "lenguaje-n",
+    "name": "lenguaje.coloreado_sintaxis",
     "displayName": "Ñ",
     "description": "Soporte para el lenguaje Ñ",
+    "license" : "MIT",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.56.0"
